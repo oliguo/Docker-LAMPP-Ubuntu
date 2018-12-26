@@ -22,7 +22,7 @@ docker ps -a
 #view all images
 docker images
 ```
-![Ubuntu Case](https://github.com/oliguo/Docker_LAMPP/blob/master/Ubuntu_Case.png)
+![Ubuntu Case](https://github.com/oliguo/Docker-LAMPP-Ubuntu/blob/master/Ubuntu_Case.png)
 
 Visit:
 
