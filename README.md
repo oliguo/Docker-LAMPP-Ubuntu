@@ -33,7 +33,7 @@ PHP:
 
 http://localhost:8080
 
-http://localhost:4433
+https://localhost:4433
 
 PhpMyadmin:
 
