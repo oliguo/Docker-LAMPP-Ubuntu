@@ -1,5 +1,5 @@
 # Docker_LAMPP
-Build LAMPP(Linux/Apache/Mysql/PHP/PhpMyadmin) by Docker(Docker File, Docker Compose)
+Build LAMPP(Ubuntu/Apache/Mysql/PHP/PhpMyadmin) by Docker(Docker File, Docker Compose)
 
 ## Helpful Tools
 [Dockerfile Online Editor](https://dockerfile-editor.com/)
