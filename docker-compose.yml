@@ -1,0 +1,51 @@
+version: '3'
+services:
+    www:
+        build: 
+          context: .
+          dockerfile: ./Dockerfile
+          args:
+            - BUILD_DATE=2018-12-26T02:13:17Z
+            - BUILD_VERSION=0.0.1
+        image: dockerlampp/ubuntu:0.0.1
+        container_name: ubuntu-apache-php7.0
+        ports: 
+            - "8080:80"
+            - "4433:443"
+        volumes:
+            - ./var/www/html:/var/www/html
+            - ./var/log/apache2:/var/log/apache2
+        links:
+            - db
+        networks:
+            - default
+    db:
+        image: mysql:5.7
+        container_name: mysql-5.7
+        restart: always
+        ports: 
+            - "33060:3306"
+        environment:
+            MYSQL_DATABASE: demo
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test 
+        volumes:
+            - ./var/lib/mysql:/var/lib/mysql
+            - ./var/log/mysql:/var/log/mysql
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:4.7
+        container_name: phpmyadmin-4.7
+        restart: always
+        ports:
+            - 9090:80
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test 
+        links: 
+            - db:db
+        networks:
+            - default
