@@ -2,7 +2,7 @@
 Build LAMPP(Ubuntu/Apache/Mysql/PHP/PhpMyadmin) by Docker(Docker File, Docker Compose)
 
 ### DockerHub Image
-https://hub.docker.com/r/oliguo/dockerlampp-ubuntu
+https://hub.docker.com/r/oliguo/ubuntu-apache-php
 
 ## Helpful Tools
 [Dockerfile Online Editor](https://dockerfile-editor.com/)
@@ -25,7 +25,7 @@ docker ps -a
 #view all images
 docker images
 ```
-![Ubuntu Case](https://github.com/oliguo/Docker-LAMPP-Ubuntu/blob/master/Ubuntu_Case.png)
+![Ubuntu Case](https://github.com/oliguo/Docker-LAMPP-Ubuntu/blob/master/Ubuntu-Case.png)
 
 Visit:
 
