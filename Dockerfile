@@ -5,7 +5,7 @@ ARG BUILD_VERSION
 
 LABEL org.label-schema.schema-version="1.0"	
 LABEL org.label-schema.schema-url="http://label-schema.org/rc1/"	
-LABEL org.label-schema.name="Docker-Lampp"
+LABEL org.label-schema.name="Ubuntu-Apache-PHP"
 LABEL org.label-schema.author="Oliver Guo <oliverguo@outlook.com>"
 LABEL org.label-schema.maintainer="Oliver Guo <oliverguo@outlook.com>"
 LABEL org.label-schema.version="0.0.1"
