@@ -12,7 +12,7 @@ https://hub.docker.com/r/oliguo/ubuntu-apache-php
 [Docker-Compose Online Validator](https://codebeautify.org/yaml-validator/)
 
 ## SSL Modification
-Edit -subj what you want
+Edit -subj what you want on dockerfile
 ```
 RUN mkdir /var/ssl && cd /var/ssl \
 && openssl req -x509 -newkey rsa:4096 \
