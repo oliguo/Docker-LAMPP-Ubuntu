@@ -11,6 +11,16 @@ https://hub.docker.com/r/oliguo/ubuntu-apache-php
 
 [Docker-Compose Online Validator](https://codebeautify.org/yaml-validator/)
 
+## SSL Modification
+Edit -subj what you want
+```
+RUN mkdir /var/ssl && cd /var/ssl \
+&& openssl req -x509 -newkey rsa:4096 \
+  -subj "/C=HK/ST=HongKong/L=HongKong/O=Demo/CN=dockerlampp.com" \
+  -keyout "/var/ssl/key.pem" \
+  -out "/var/ssl/cert.pem" \
+  -days 3650 -nodes -sha256
+```
 
 Run as cmd
 ```
