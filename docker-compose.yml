@@ -7,8 +7,8 @@ services:
           args:
             - BUILD_DATE=2018-12-26T02:13:17Z
             - BUILD_VERSION=0.0.1
-        image: oliguo/dockerlampp-ubuntu:0.0.1
-        container_name: ubuntu-apache-php7.0
+        image: oliguo/ubuntu-apache-php:0.0.1
+        container_name: ubuntu-apache-php
         ports: 
             - "8080:80"
             - "4433:443"
