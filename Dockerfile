@@ -18,6 +18,8 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get update \
 && apt-get -y install \
 		nano \
+		net-tools \
+		iputils-ping \
 		openssl \
 		apache2 \
 		php7.0 \
