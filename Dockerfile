@@ -47,7 +47,7 @@ RUN apt-get update \
 
 RUN mkdir /var/ssl && cd /var/ssl \
 && openssl req -x509 -newkey rsa:4096 \
-  -subj "/C=HK/ST=HongKong/L=HongKong/O=Demo/CN=dockerlampp.com" \
+  -subj "/C=HK/ST=HongKong/L=HongKong/O=Demo/CN=localhost" \
   -keyout "/var/ssl/key.pem" \
   -out "/var/ssl/cert.pem" \
   -days 3650 -nodes -sha256
